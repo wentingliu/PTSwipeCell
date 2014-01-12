@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11AB3534184CED5B004A7F8D /* UIColor+LightDark.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AB3533184CED5B004A7F8D /* UIColor+LightDark.m */; };
+		DB06200A1882935C00D80503 /* PTSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0620091882935C00D80503 /* PTSwipeCell.m */; };
 		F4964FA01848E4F8005C847D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4964F9F1848E4F8005C847D /* Foundation.framework */; };
 		F4964FA21848E4F8005C847D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4964FA11848E4F8005C847D /* CoreGraphics.framework */; };
 		F4964FA41848E4F8005C847D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4964FA31848E4F8005C847D /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		F4964FCC1848E4F8005C847D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4964FCA1848E4F8005C847D /* InfoPlist.strings */; };
 		F4964FCE1848E4F8005C847D /* PTSwipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4964FCD1848E4F8005C847D /* PTSwipeTests.m */; };
 		F4964FD91848E543005C847D /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4964FD81848E543005C847D /* MyTableViewController.m */; };
-		F4964FDC1848E5F1005C847D /* PTSwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4964FDB1848E5F1005C847D /* PTSwipeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,8 @@
 /* Begin PBXFileReference section */
 		11AB3532184CED5B004A7F8D /* UIColor+LightDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LightDark.h"; sourceTree = "<group>"; };
 		11AB3533184CED5B004A7F8D /* UIColor+LightDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LightDark.m"; sourceTree = "<group>"; };
+		DB0620081882935C00D80503 /* PTSwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSwipeCell.h; sourceTree = "<group>"; };
+		DB0620091882935C00D80503 /* PTSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSwipeCell.m; sourceTree = "<group>"; };
 		F4964F9C1848E4F8005C847D /* PTSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4964F9F1848E4F8005C847D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4964FA11848E4F8005C847D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,8 +61,6 @@
 		F4964FCD1848E4F8005C847D /* PTSwipeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTSwipeTests.m; sourceTree = "<group>"; };
 		F4964FD71848E543005C847D /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		F4964FD81848E543005C847D /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
-		F4964FDA1848E5F1005C847D /* PTSwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSwipeCell.h; sourceTree = "<group>"; };
-		F4964FDB1848E5F1005C847D /* PTSwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSwipeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +87,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0620071882935C00D80503 /* PTSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB0620081882935C00D80503 /* PTSwipeCell.h */,
+				DB0620091882935C00D80503 /* PTSwipeCell.m */,
+			);
+			name = PTSwipeCell;
+			path = ../PTSwipeCell;
+			sourceTree = "<group>";
+		};
 		F4964F931848E4F8005C847D = {
 			isa = PBXGroup;
 			children = (
+				DB0620071882935C00D80503 /* PTSwipeCell */,
 				F4964FA51848E4F8005C847D /* PTSwipe */,
 				F4964FC71848E4F8005C847D /* PTSwipeTests */,
 				F4964F9E1848E4F8005C847D /* Frameworks */,
@@ -127,8 +138,6 @@
 				F4964FBA1848E4F8005C847D /* Images.xcassets */,
 				F4964FD71848E543005C847D /* MyTableViewController.h */,
 				F4964FD81848E543005C847D /* MyTableViewController.m */,
-				F4964FDA1848E5F1005C847D /* PTSwipeCell.h */,
-				F4964FDB1848E5F1005C847D /* PTSwipeCell.m */,
 				11AB3532184CED5B004A7F8D /* UIColor+LightDark.h */,
 				11AB3533184CED5B004A7F8D /* UIColor+LightDark.m */,
 				F4964FA61848E4F8005C847D /* Supporting Files */,
@@ -267,7 +276,7 @@
 				F4964FAC1848E4F8005C847D /* main.m in Sources */,
 				F4964FD91848E543005C847D /* MyTableViewController.m in Sources */,
 				11AB3534184CED5B004A7F8D /* UIColor+LightDark.m in Sources */,
-				F4964FDC1848E5F1005C847D /* PTSwipeCell.m in Sources */,
+				DB06200A1882935C00D80503 /* PTSwipeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
