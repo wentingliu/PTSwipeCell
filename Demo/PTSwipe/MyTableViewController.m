@@ -117,11 +117,11 @@
 //===============================================
 
 - (void)swipeCell:(PTSwipeCell *)cell didSwipeTo:(NSInteger)index onSide:(PTSwipeCellSide)side {
-    NSLog(@"didSwipeTo:%li onSide:%li", (long)index, side);
+    NSLog(@"didSwipeTo:%d onSide:%d", index, side);
     
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     
-    BOOL objectIsChecked = self.checked[indexPath.row];
+    BOOL objectIsChecked = [self.checked[indexPath.row] boolValue];
     
     BOOL showAsChecked = NO;
     if (index == 0 && !objectIsChecked) showAsChecked = YES;
